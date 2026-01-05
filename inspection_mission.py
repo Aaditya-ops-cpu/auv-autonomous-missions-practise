@@ -46,21 +46,21 @@ for i in range(10):
 
     print("Leg 1: North")
     for i in range(5):
-        set_velocity(1, 0, 0, 0) # 1 m/s North (x), 0 East (y)
+        set_velocity(1, 0, 0, 0) 
         time.sleep(1)
     
     print("Leg 2: East")
     for i in range(5):
-        set_velocity(0, 1, 0, 0) # 0 North, 1 m/s East (y)
+        set_velocity(0, 1, 0, 0) 
         time.sleep(1)
     print("Leg 3: South")
     for i in range(5):
-        set_velocity(-1, 0, 0, 0) # -1 North (South), 0 East
+        set_velocity(-1, 0, 0, 0) 
         time.sleep(1)
 
     print("Leg 4: West")
     for i in range(5):
-        set_velocity(0, -1, 0, 0) # 0 North, -1 East (West)
+        set_velocity(0, -1, 0, 0) 
         time.sleep(1)
 print("Surfacing...")
 set_mode('SURFACE') 
